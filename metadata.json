@@ -1,0 +1,8 @@
+{
+  "name": "Rapids Water Damage Restoration",
+  "description": "Professional water, fire, flood, and mold damage restoration services in Jacksonville, FL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
