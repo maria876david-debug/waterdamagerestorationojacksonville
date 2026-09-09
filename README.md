@@ -1,6 +1,6 @@
 # waterdamagerestorationojacksonville
 
-This is a professional website for Rapids Water Damage Restoration, specializing in services.
+This is a professional website for Water Damage Restoration Jacksonville, specializing in services.
 
 ## Files Included
 

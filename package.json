@@ -1,7 +1,7 @@
 {
   "name": "waterdamagerestorationojacksonville",
   "version": "1.0.0",
-  "description": "Rapids Water Damage Restoration in Jacksonville, FL",
+  "description": "Water Damage Restoration Jacksonville, FL",
   "type": "module",
   "scripts": {
     "dev": "node server.js",
