@@ -44,6 +44,21 @@
       "permanent": true
     },
     {
+      "source": "/services/emergency-water-removal.html",
+      "destination": "/services/emergency-water-removal",
+      "permanent": true
+    },
+    {
+      "source": "/services/mold-remediation.html",
+      "destination": "/services/mold-remediation",
+      "permanent": true
+    },
+    {
+      "source": "/services/sewage-cleanup.html",
+      "destination": "/services/sewage-cleanup",
+      "permanent": true
+    },
+    {
       "source": "/blog.html",
       "destination": "/blog",
       "permanent": true
