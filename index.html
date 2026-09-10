@@ -172,9 +172,31 @@ nav.main-links a:hover{opacity:1;color:var(--orange)}
 /* ===== HERO ===== */
 .hero{
   position:relative;overflow:hidden;
-  padding:64px 0 0;
+  min-height:560px;
+  display:flex;align-items:center;
+  padding:76px 0 68px;
 }
-.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.hero-bg{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  z-index:1;
+}
+.hero-bg img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center;
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(105deg, rgba(11,15,20,0.97) 0%, rgba(11,15,20,0.92) 42%, rgba(11,15,20,0.68) 72%, rgba(11,15,20,0.32) 100%),
+    linear-gradient(0deg, rgba(11,15,20,0.96) 0%, rgba(11,15,20,0.45) 55%, rgba(11,15,20,0.15) 100%);
+}
+.hero .wrap{
+  position:relative;z-index:2;width:100%;
+}
+.hero-content{
+  max-width:680px;
+}
 .badge{
   display:inline-block;background:var(--surface-2);border:1px solid var(--line);
   color:var(--orange);font-weight:700;font-size:13px;letter-spacing:1px;
@@ -182,22 +204,20 @@ nav.main-links a:hover{opacity:1;color:var(--orange)}
 }
 .hero h1{font-size:clamp(38px,6vw,64px);margin-bottom:18px}
 .hero h1 em{font-style:normal;color:var(--blue)}
-.hero p.lead{font-size:18px;color:var(--muted);margin-bottom:28px;max-width:52ch}
+.hero p.lead{font-size:18px;color:#CBD5E1;margin-bottom:28px;max-width:54ch}
 .hero-cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px}
-.trust-strip{display:flex;gap:28px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}
-.trust-item{font-size:13px;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:8px}
+.hero .btn-outline{
+  background:rgba(11,15,20,0.65);
+  border:2px solid var(--line);
+  backdrop-filter:blur(4px);
+}
+.hero .btn-outline:hover{
+  border-color:var(--orange);
+  background:rgba(11,15,20,0.85);
+}
+.trust-strip{display:flex;gap:28px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.12);padding-top:22px}
+.trust-item{font-size:13px;color:#CBD5E1;font-weight:600;display:flex;align-items:center;gap:8px}
 .trust-item .dot{width:8px;height:8px;background:var(--blue);border-radius:50%;flex:none}
-.hero-media{position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
-.hero-media img{height:520px;object-fit:cover;width:100%}
-.hero-media::after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(11,15,20,0) 40%,rgba(11,15,20,0.85) 100%);
-}
-.hero-media .tag{
-  position:absolute;left:18px;bottom:18px;z-index:2;
-  background:rgba(11,15,20,0.85);border:1px solid var(--line);
-  padding:10px 14px;border-radius:4px;font-size:13px;font-weight:600;color:var(--text);
-}
 
 /* ===== URGENCY / HAZARD STRIP ===== */
 .hazard{
@@ -295,8 +315,13 @@ footer li a:hover{color:var(--text)}
   .risk-notice{display:none}
   .utility-row{justify-content:center;padding:7px 0}
   .utility-right{gap:6px;font-size:11.5px}
-  .hero-grid{grid-template-columns:1fr}
-  .hero-media img{height:320px}
+  .hero{padding:54px 0 46px;min-height:auto}
+  .hero-content{max-width:100%}
+  .hero-overlay{
+    background:
+      linear-gradient(180deg, rgba(11,15,20,0.88) 0%, rgba(11,15,20,0.96) 100%),
+      linear-gradient(105deg, rgba(11,15,20,0.95) 0%, rgba(11,15,20,0.75) 100%);
+  }
   .grid-3{grid-template-columns:1fr}
   .grid-2{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
@@ -344,8 +369,14 @@ footer li a:hover{color:var(--text)}
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1657069344312-a500de53b566?fm=jpg&q=70&w=1200&auto=format&fit=crop"
+         alt="Flooded residential property in need of water damage restoration"
+         loading="eager" width="1200" height="1400">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-content">
       <span class="badge">24/7 EMERGENCY DISPATCH — JACKSONVILLE, FL</span>
       <h1>WATER DAMAGE<br>RESTORATION<br><em>JACKSONVILLE</em></h1>
       <p class="lead">Connected to a network of certified restoration technicians ready to respond across Duval County — day or night. Fast extraction, transparent pricing, full insurance documentation.</p>
@@ -358,12 +389,6 @@ footer li a:hover{color:var(--text)}
         <div class="trust-item"><span class="dot"></span>Insurance Claim Documentation</div>
         <div class="trust-item"><span class="dot"></span>Same-Day Response</div>
       </div>
-    </div>
-    <div class="hero-media">
-      <img src="https://images.unsplash.com/photo-1657069344312-a500de53b566?fm=jpg&q=70&w=1200&auto=format&fit=crop"
-           alt="Flooded residential property in need of water damage restoration"
-           loading="eager" width="1200" height="1400">
-      <span class="tag">Duval County flood risk is real — see why below ↓</span>
     </div>
   </div>
 </section>
