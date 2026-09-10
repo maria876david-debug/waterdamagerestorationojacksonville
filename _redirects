@@ -1,12 +1,40 @@
 https://www.waterdamagerestorationojacksonville.us/* https://waterdamagerestorationojacksonville.us/:splat 301!
+
+# 1. Duplicate content
+/services/flood-damage-cleanup /services/flood-damage-restoration/ 301!
+/services/flood-damage-cleanup/ /services/flood-damage-restoration/ 301!
+/services/flood-damage-cleanup.html /services/flood-damage-restoration/ 301!
+
+# 2. Duplicate neighborhood pages
+/locations/water-damage-restoration-in-san-marco /service-areas/san-marco/ 301!
+/locations/water-damage-restoration-in-san-marco/ /service-areas/san-marco/ 301!
+/locations/water-damage-restoration-in-san-marco.html /service-areas/san-marco/ 301!
+
+/locations/water-damage-restoration-in-riverside /service-areas/riverside/ 301!
+/locations/water-damage-restoration-in-riverside/ /service-areas/riverside/ 301!
+/locations/water-damage-restoration-in-riverside.html /service-areas/riverside/ 301!
+
+# 3. Off-topic page removed
+/services/fire-damage-restoration / 301!
+/services/fire-damage-restoration/ / 301!
+/services/fire-damage-restoration.html / 301!
+
+# Trailing slash and HTML redirects
 /index.html / 301!
-/about.html /about 301!
-/contact.html /contact 301!
-/services.html /services 301!
-/locations.html /locations 301!
-/privacy-policy.html /privacy-policy 301!
-/terms-conditions.html /terms-conditions 301!
-/services/emergency-water-removal.html /services/emergency-water-removal/ 301!
-/services/mold-remediation.html /services/mold-remediation/ 301!
-/services/sewage-cleanup.html /services/sewage-cleanup/ 301!
-/blog.html /blog 301!
+/about.html /about/ 301!
+/about /about/ 301!
+/contact.html /contact/ 301!
+/contact /contact/ 301!
+/services.html /services/ 301!
+/services /services/ 301!
+/service-areas.html /service-areas/ 301!
+/service-areas /service-areas/ 301!
+/locations.html /locations/ 301!
+/locations /locations/ 301!
+/privacy-policy.html /privacy-policy/ 301!
+/privacy-policy /privacy-policy/ 301!
+/terms-conditions.html /terms-conditions/ 301!
+/terms-conditions /terms-conditions/ 301!
+/blog.html /blog/ 301!
+/blog /blog/ 301!
+

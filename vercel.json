@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "redirects": [
     {
       "source": "/(.*)",
@@ -14,53 +14,118 @@
       "permanent": true
     },
     {
+      "source": "/services/flood-damage-cleanup",
+      "destination": "/services/flood-damage-restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/services/flood-damage-cleanup/",
+      "destination": "/services/flood-damage-restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/services/flood-damage-cleanup.html",
+      "destination": "/services/flood-damage-restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-san-marco",
+      "destination": "/service-areas/san-marco/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-san-marco/",
+      "destination": "/service-areas/san-marco/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-san-marco.html",
+      "destination": "/service-areas/san-marco/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-riverside",
+      "destination": "/service-areas/riverside/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-riverside/",
+      "destination": "/service-areas/riverside/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-riverside.html",
+      "destination": "/service-areas/riverside/",
+      "permanent": true
+    },
+    {
+      "source": "/services/fire-damage-restoration",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/fire-damage-restoration/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/fire-damage-restoration.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/about.html",
-      "destination": "/about",
+      "destination": "/about/",
       "permanent": true
     },
     {
       "source": "/contact.html",
-      "destination": "/contact",
+      "destination": "/contact/",
       "permanent": true
     },
     {
       "source": "/services.html",
-      "destination": "/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas.html",
+      "destination": "/service-areas/",
       "permanent": true
     },
     {
       "source": "/locations.html",
-      "destination": "/locations",
+      "destination": "/locations/",
       "permanent": true
     },
     {
       "source": "/privacy-policy.html",
-      "destination": "/privacy-policy",
+      "destination": "/privacy-policy/",
       "permanent": true
     },
     {
       "source": "/terms-conditions.html",
-      "destination": "/terms-conditions",
+      "destination": "/terms-conditions/",
       "permanent": true
     },
     {
       "source": "/services/emergency-water-removal.html",
-      "destination": "/services/emergency-water-removal",
+      "destination": "/services/emergency-water-removal/",
       "permanent": true
     },
     {
       "source": "/services/mold-remediation.html",
-      "destination": "/services/mold-remediation",
+      "destination": "/services/mold-remediation/",
       "permanent": true
     },
     {
       "source": "/services/sewage-cleanup.html",
-      "destination": "/services/sewage-cleanup",
+      "destination": "/services/sewage-cleanup/",
       "permanent": true
     },
     {
       "source": "/blog.html",
-      "destination": "/blog",
+      "destination": "/blog/",
       "permanent": true
     }
   ]
