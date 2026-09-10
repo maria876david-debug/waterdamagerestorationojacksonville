@@ -68,9 +68,31 @@ header{
   border-bottom:1px solid var(--line);
   backdrop-filter:blur(6px);
 }
+.utility-bar{
+  background:var(--surface-2);
+  border-bottom:1px solid var(--line);
+}
+.utility-row{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:9px 0;flex-wrap:wrap;
+  font-size:12.5px;
+}
+.risk-notice{color:var(--muted);display:flex;align-items:center;gap:8px}
+.risk-notice strong{color:var(--orange);font-weight:800;letter-spacing:0.3px}
+.risk-notice .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--orange);flex:none;
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.utility-right{display:flex;align-items:center;gap:10px;color:var(--muted);flex-wrap:wrap}
+.utility-right a{color:var(--muted);font-weight:500}
+.utility-right a:hover{color:var(--orange)}
+.utility-right .sep{color:var(--line)}
+.utility-right .standing-by{color:var(--text);font-weight:600}
+.utility-right .standing-by a{color:var(--orange);font-weight:800;text-decoration:underline}
 .nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .logo img{height:44px;width:auto}
-nav.main-links{display:flex;gap:24px;align-items:center}
+nav.main-links{display:flex;gap:28px;align-items:center}
 nav.main-links a{font-weight:600;font-size:15px;color:var(--text);opacity:0.85}
 nav.main-links a:hover{opacity:1;color:var(--orange)}
 nav.main-links a.active{color:var(--orange);opacity:1}
@@ -101,11 +123,11 @@ nav.main-links a.active{color:var(--orange);opacity:1}
 /* FOOTER */
 footer{background:var(--surface);border-top:1px solid var(--line);padding:54px 0 28px;margin-top:64px}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:36px}
-.footer-grid h4{font-family:'Anton';font-size:18px;margin-bottom:14px;text-transform:uppercase;color:var(--text)}
-.footer-grid ul{list-style:none;padding:0;margin:0}
-.footer-grid li{margin-bottom:10px;font-size:14px}
-.footer-grid a{color:var(--muted)}
-.footer-grid a:hover{color:var(--orange)}
+footer h4{font-family:'Anton';font-size:18px;margin-bottom:14px;text-transform:uppercase;color:var(--text)}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:10px;font-size:14px}
+footer li a{color:var(--muted)}
+footer li a:hover{color:var(--orange)}
 .footer-note{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin-bottom:18px}
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--muted)}
 .footer-bottom a{color:var(--muted)}
@@ -118,7 +140,9 @@ footer{background:var(--surface);border-top:1px solid var(--line);padding:54px 0
 }
 
 @media(max-width:880px){
-  .nav-row{padding:12px 0}
+  .risk-notice{display:none}
+  .utility-row{justify-content:center;padding:7px 0}
+  .utility-right{gap:6px;font-size:11.5px}
   nav.main-links{display:none}
   .menu-toggle{display:block}
   .services-list{grid-template-columns:1fr}
@@ -131,12 +155,27 @@ footer{background:var(--surface);border-top:1px solid var(--line);padding:54px 0
 <body>
 
 <header>
+  <div class="utility-bar">
+    <div class="wrap utility-row">
+      <div class="risk-notice">
+        <span class="dot"></span>
+        <strong>ACTIVE RISK NOTICE:</strong>&nbsp;Duval County storm season &amp; 24–48h mold growth window active.
+      </div>
+      <div class="utility-right">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <span class="sep">|</span>
+        <a href="/terms-conditions/">Terms &amp; Conditions</a>
+        <span class="sep">|</span>
+        <span class="standing-by">24/7 Techs Standing By: <a href="tel:9046630696">(904) 663-0696</a></span>
+      </div>
+    </div>
+  </div>
   <div class="wrap nav-row">
     <a href="/" class="logo"><img src="/logo.svg" alt="Water Damage Restoration Jacksonville"></a>
     <nav class="main-links">
       <a href="/services/" class="active">Services</a>
-      <a href="/#process">Process</a>
       <a href="/#service-areas">Service Areas</a>
+      <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
     </nav>
