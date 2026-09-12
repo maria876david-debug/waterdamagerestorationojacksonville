@@ -127,6 +127,21 @@
       "source": "/blog.html",
       "destination": "/blog/",
       "permanent": true
+    },
+    {
+      "source": "/faq.html",
+      "destination": "/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/cost-guides/water-damage-restoration-cost-jacksonville.html",
+      "destination": "/cost-guides/water-damage-restoration-cost-jacksonville/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/insurance-claims-denied-jacksonville.html",
+      "destination": "/guides/insurance-claims-denied-jacksonville/",
+      "permanent": true
     }
   ]
 }

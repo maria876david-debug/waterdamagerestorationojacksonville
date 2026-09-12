@@ -144,4 +144,22 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://waterdamagerestorationojacksonville.us/faq/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://waterdamagerestorationojacksonville.us/cost-guides/water-damage-restoration-cost-jacksonville/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://waterdamagerestorationojacksonville.us/guides/insurance-claims-denied-jacksonville/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
