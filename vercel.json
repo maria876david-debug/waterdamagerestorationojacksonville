@@ -104,7 +104,17 @@
       "permanent": true
     },
     {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy/",
+      "permanent": true
+    },
+    {
       "source": "/terms-conditions.html",
+      "destination": "/terms-conditions/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-conditions",
       "destination": "/terms-conditions/",
       "permanent": true
     },
