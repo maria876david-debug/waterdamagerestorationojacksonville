@@ -59,6 +59,51 @@
       "permanent": true
     },
     {
+      "source": "/locations/water-damage-restoration-in-downtown-jacksonville",
+      "destination": "/service-areas/downtown-jacksonville/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-downtown-jacksonville/",
+      "destination": "/service-areas/downtown-jacksonville/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-downtown-jacksonville.html",
+      "destination": "/service-areas/downtown-jacksonville/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-avondale",
+      "destination": "/service-areas/avondale/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-avondale/",
+      "destination": "/service-areas/avondale/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-avondale.html",
+      "destination": "/service-areas/avondale/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-southside",
+      "destination": "/service-areas/southside/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-southside/",
+      "destination": "/service-areas/southside/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/water-damage-restoration-in-southside.html",
+      "destination": "/service-areas/southside/",
+      "permanent": true
+    },
+    {
       "source": "/services/fire-damage-restoration",
       "destination": "/",
       "permanent": true

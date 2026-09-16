@@ -26,6 +26,18 @@ const explicitRedirects = {
   '/locations/water-damage-restoration-in-riverside/': '/service-areas/riverside/',
   '/locations/water-damage-restoration-in-riverside.html': '/service-areas/riverside/',
 
+  '/locations/water-damage-restoration-in-downtown-jacksonville': '/service-areas/downtown-jacksonville/',
+  '/locations/water-damage-restoration-in-downtown-jacksonville/': '/service-areas/downtown-jacksonville/',
+  '/locations/water-damage-restoration-in-downtown-jacksonville.html': '/service-areas/downtown-jacksonville/',
+
+  '/locations/water-damage-restoration-in-avondale': '/service-areas/avondale/',
+  '/locations/water-damage-restoration-in-avondale/': '/service-areas/avondale/',
+  '/locations/water-damage-restoration-in-avondale.html': '/service-areas/avondale/',
+
+  '/locations/water-damage-restoration-in-southside': '/service-areas/southside/',
+  '/locations/water-damage-restoration-in-southside/': '/service-areas/southside/',
+  '/locations/water-damage-restoration-in-southside.html': '/service-areas/southside/',
+
   // 3. Off-topic page removed -> homepage
   '/services/fire-damage-restoration': '/',
   '/services/fire-damage-restoration/': '/',
