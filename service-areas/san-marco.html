@@ -256,6 +256,15 @@ footer li a:hover{color:var(--text)}
 .map-wrap{border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:24px}
 .map-wrap iframe{width:100%;height:380px;border:0;display:block}
 
+
+/* Header dropdown navigation */
+.nav-dd{position:relative;display:inline-block}
+nav.main-links .nav-dd-btn{display:inline-flex;align-items:center;gap:4px}
+nav.main-links .nav-dd-btn .caret{font-size:11px;line-height:1}
+.nav-dd-menu{display:none;position:absolute;top:100%;left:0;min-width:260px;max-height:380px;overflow-y:auto;background:#fff;border-radius:0 0 10px 10px;box-shadow:0 12px 32px rgba(0,0,0,.18);z-index:1200;padding:6px 0}
+.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:block}
+nav.main-links .nav-dd-menu a{display:block;padding:9px 18px;font-size:14px;font-weight:500;white-space:nowrap;opacity:1}
+nav.main-links .nav-dd-menu a:hover{background:#f3f4f6;color:var(--orange);opacity:1}
 </style>
 </head>
 <body>
@@ -279,8 +288,8 @@ footer li a:hover{color:var(--text)}
   <div class="wrap nav-row">
     <a href="/" class="logo"><img src="/logo.svg" alt="Water Damage Restoration Jacksonville"></a>
     <nav class="main-links">
-      <a href="/services/">Services</a>
-      <a href="/service-areas/" class="active">Service Areas</a>
+      <div class="nav-dd"><a href="/services/" class="nav-dd-btn">Services <span class="caret">▾</span></a><div class="nav-dd-menu"><a href="/services/water-damage-restoration/">Water Damage Restoration</a><a href="/services/emergency-water-removal/">Emergency Water Removal</a><a href="/services/water-extraction-services/">Water Extraction Services</a><a href="/services/structural-drying/">Structural Drying</a><a href="/services/dehumidification-services/">Dehumidification Services</a><a href="/services/burst-pipe-repair-cleanup/">Burst Pipe Repair &amp; Cleanup</a><a href="/services/flood-damage-restoration/">Flood Damage Restoration</a><a href="/services/storm-damage-restoration/">Storm Damage Restoration</a><a href="/services/sewage-cleanup/">Sewage Cleanup</a><a href="/services/mold-remediation/">Mold Remediation</a><a href="/services/content-cleaning-and-restoration/">Content Cleaning &amp; Restoration</a><a href="/services/fire-damage-restoration/">Fire Damage Restoration</a><a href="/services/flood-damage-cleanup/">Flood Damage Cleanup</a></div></div>
+      <div class="nav-dd"><a href="/service-areas/" class="nav-dd-btn active">Service Areas <span class="caret">▾</span></a><div class="nav-dd-menu"><a href="/service-areas/riverside/">Riverside</a><a href="/service-areas/san-marco/">San Marco</a><a href="/service-areas/avondale/">Avondale</a><a href="/service-areas/downtown-jacksonville/">Downtown Jacksonville</a><a href="/service-areas/southside/">Southside</a><a href="/service-areas/westside/">Westside</a></div></div>
       <a href="/faq/">FAQ</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
@@ -296,7 +305,7 @@ footer li a:hover{color:var(--text)}
 
 <main class="content-wrap section">
   <div class="breadcrumb">
-    <a href="/">Home</a> / <a href="/service-areas/">Service Areas</a> / <span>San Marco</span>
+    <a href="/">Home</a> / <div class="nav-dd"><a href="/service-areas/" class="nav-dd-btn">Service Areas <span class="caret">▾</span></a><div class="nav-dd-menu"><a href="/service-areas/riverside/">Riverside</a><a href="/service-areas/san-marco/">San Marco</a><a href="/service-areas/avondale/">Avondale</a><a href="/service-areas/downtown-jacksonville/">Downtown Jacksonville</a><a href="/service-areas/southside/">Southside</a><a href="/service-areas/westside/">Westside</a></div></div> / <span>San Marco</span>
   </div>
 
   <div style="margin-top:28px">
