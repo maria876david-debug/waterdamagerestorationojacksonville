@@ -4,7 +4,12 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{"type": "host", "value": "www.waterdamagerestorationojacksonville.us"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waterdamagerestorationojacksonville.us"
+        }
+      ],
       "destination": "https://waterdamagerestorationojacksonville.us/$1",
       "permanent": true
     },
@@ -105,17 +110,17 @@
     },
     {
       "source": "/services/fire-damage-restoration",
-      "destination": "/",
+      "destination": "/services/",
       "permanent": true
     },
     {
       "source": "/services/fire-damage-restoration/",
-      "destination": "/",
+      "destination": "/services/",
       "permanent": true
     },
     {
       "source": "/services/fire-damage-restoration.html",
-      "destination": "/",
+      "destination": "/services/",
       "permanent": true
     },
     {
