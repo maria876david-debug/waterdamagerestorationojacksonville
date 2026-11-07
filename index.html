@@ -404,6 +404,71 @@ nav.main-links .nav-dd-menu a:hover{background:#f3f4f6;color:var(--orange);opaci
   </div>
 </section>
 
+<style>
+.water-story{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:72px 0}
+.water-story-head{text-align:center;max-width:720px;margin:0 auto 2.5rem}
+.water-story-head h2{margin-bottom:.5rem}
+.water-story-head p{margin:0 auto}
+.water-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.water-story-card{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.water-story-card.is-visible{opacity:1;transform:none}
+.water-story-card:nth-child(2){transition-delay:.12s}
+.water-story-card:nth-child(3){transition-delay:.24s}
+.water-story-card img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.water-story-body{padding:22px 22px 26px}
+.water-story-step{color:var(--orange);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.water-story-body h3{margin:.35rem 0 .5rem;font-size:20px}
+.water-story-body p{margin:0;color:var(--muted);font-size:15px;line-height:1.55}
+.water-story-cta{text-align:center;margin-top:2.25rem}
+.water-story-cta .btn{margin:0 .4rem .6rem}
+.water-story-cta-note{color:var(--muted);font-size:.95rem;margin:.25rem 0 0}
+@media (prefers-reduced-motion:reduce){.water-story-card{opacity:1;transform:none;transition:none}}
+@media (max-width:900px){.water-story{padding:48px 0}.water-story-grid{grid-template-columns:1fr}}
+</style>
+<section class="water-story" id="water-story" aria-label="How water damage gets fixed">
+  <div class="wrap">
+    <div class="water-story-head">
+      <span class="eyebrow">FROM LEAK TO DRY HOME</span>
+      <h2>From Water Damage to Dry Again</h2>
+      <p>Three steps. No surprises. Here is how it works.</p>
+    </div>
+    <div class="water-story-grid">
+      <article class="water-story-card" data-reveal>
+        <img src="/assets/images/story/water-hits-jacksonville.webp" alt="A suburban house surrounded by floodwater after heavy rain" width="1200" height="800" loading="lazy" decoding="async">
+        <div class="water-story-body">
+          <span class="water-story-step">Step 1</span>
+          <h3>Water Hits</h3>
+          <p>A burst pipe, a failed water heater, or floodwater from the St. Johns River &mdash; water spreads fast, into floors, walls, and subflooring.</p>
+        </div>
+      </article>
+      <article class="water-story-card" data-reveal>
+        <img src="/assets/images/story/water-extraction-jacksonville.webp" alt="A professional cleaner vacuums a modern living room floor with a wet/dry vacuum" width="1200" height="800" loading="lazy" decoding="async">
+        <div class="water-story-body">
+          <span class="water-story-step">Step 2</span>
+          <h3>Fast Extraction</h3>
+          <p>Our technician network is standing by 24/7. Standing water is pumped and vacuumed out fast, before it wicks deeper into the structure.</p>
+        </div>
+      </article>
+      <article class="water-story-card" data-reveal>
+        <img src="/assets/images/story/drying-restoration-jacksonville.webp" alt="A bright, dry modern living room with an open-plan kitchen and garden view" width="1200" height="800" loading="lazy" decoding="async">
+        <div class="water-story-body">
+          <span class="water-story-step">Step 3</span>
+          <h3>Drying &amp; Restoration</h3>
+          <p>Industrial air movers and dehumidifiers dry materials from the inside, not just the surface. Moisture is rechecked before the job closes &mdash; if it&rsquo;s not dry, it&rsquo;s not done.</p>
+        </div>
+      </article>
+    </div>
+    <div class="water-story-cta">
+      <a href="tel:+19046630696" class="btn">📞 Call (904) 663-0696</a>
+      <a href="/services/emergency-water-removal/" class="btn btn-outline">Emergency Water Removal &rarr;</a>
+      <p class="water-story-cta-note">24/7 emergency dispatch &mdash; Jacksonville, FL. Written estimate before work begins.</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){var cards=document.querySelectorAll('.water-story-card[data-reveal]');if(!cards.length)return;if(!('IntersectionObserver' in window)){cards.forEach(function(c){c.classList.add('is-visible')});return;}var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});cards.forEach(function(c){io.observe(c);});})();
+</script>
+
 <div class="hazard"></div>
 
 <!-- ============ URGENCY ============ -->
