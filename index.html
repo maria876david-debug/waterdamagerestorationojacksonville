@@ -441,9 +441,19 @@ table.compare td.yes{color:#0E4D2E}
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1657069344312-a500de53b566?fm=jpg&q=70&w=1200&auto=format&fit=crop"
-         alt="Flooded residential property in need of water damage restoration"
-         loading="eager" width="1200" height="1400">
+    <div class="hero-slides">
+      <img class="hero-slide is-active" src="https://images.unsplash.com/photo-1657069344312-a500de53b566?fm=jpg&q=70&w=1200&auto=format&fit=crop"
+           alt="Flooded residential property in need of water damage restoration"
+           loading="eager" width="1200" height="1400">
+      <img class="hero-slide" src="/assets/images/gen/flood-restoration-jacksonville-hero.jpg"
+           alt="Flooded Jacksonville street lined with palm trees after a storm" loading="lazy">
+      <img class="hero-slide" src="/assets/images/gen/flood-water-extraction-jacksonville.webp"
+           alt="Technician extracting standing water from a flooded living room" loading="lazy">
+      <img class="hero-slide" src="/assets/images/gen/flood-drying-equipment-jacksonville.webp"
+           alt="Air movers and a dehumidifier drying a water-damaged room" loading="lazy">
+      <img class="hero-slide" src="/assets/images/story/water-hits-jacksonville.webp"
+           alt="Home surrounded by floodwater" loading="lazy">
+    </div>
     <div class="hero-overlay"></div>
   </div>
   <div class="wrap">
@@ -460,6 +470,112 @@ table.compare td.yes{color:#0E4D2E}
         <div class="trust-item"><span class="dot"></span>Insurance Claim Documentation</div>
         <div class="trust-item"><span class="dot"></span>Fast Response</div>
       </div>
+    </div>
+  </div>
+  <div class="hero-dots" aria-label="Choose hero photo">
+    <button class="hero-dot is-active" type="button" aria-label="Photo 1"></button>
+    <button class="hero-dot" type="button" aria-label="Photo 2"></button>
+    <button class="hero-dot" type="button" aria-label="Photo 3"></button>
+    <button class="hero-dot" type="button" aria-label="Photo 4"></button>
+    <button class="hero-dot" type="button" aria-label="Photo 5"></button>
+  </div>
+</section>
+
+<style>
+.hero-slides{position:absolute;inset:0}
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 1.1s ease}
+.hero-slide.is-active{opacity:1}
+.hero-dots{position:absolute;right:24px;bottom:22px;z-index:3;display:flex;gap:8px}
+.hero-dot{width:11px;height:11px;border-radius:50%;border:2px solid rgba(255,255,255,.75);background:transparent;cursor:pointer;padding:0}
+.hero-dot.is-active{background:#7FB069;border-color:#7FB069}
+@media (prefers-reduced-motion:reduce){.hero-slide{transition:none}.ba-track{transition:none}}
+.ba-section{background:#FFFFFF}
+.ba-head{max-width:720px;margin-bottom:2.25rem}
+.ba-head p{margin:0}
+.ba-carousel{position:relative;overflow:hidden;border-radius:6px;box-shadow:0 10px 34px rgba(9,51,29,.16)}
+.ba-track{display:flex;transition:transform .6s ease}
+.ba-slide{flex:0 0 100%;min-width:100%}
+.ba-cmp{position:relative;aspect-ratio:16/10;overflow:hidden;background:#09331D;touch-action:none;user-select:none;-webkit-user-select:none}
+.ba-cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba-cmp .ba-before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0);z-index:2}
+.ba-cmp .ba-after{z-index:1}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;background:#FFFFFF;transform:translateX(-50%);box-shadow:0 0 0 1px rgba(9,51,29,.35);z-index:4;pointer-events:none}
+.ba-grip{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#0E4D2E;border:2px solid #FFFFFF;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:700;letter-spacing:1px;box-shadow:0 2px 10px rgba(0,0,0,.35);white-space:nowrap}
+.ba-tag{position:absolute;top:14px;z-index:3;background:rgba(9,51,29,.85);color:#FFFFFF;font-family:'Oswald',Arial,sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:6px 12px;border-radius:3px;pointer-events:none}
+.ba-tag-before{left:14px}
+.ba-tag-after{right:14px;background:#0E4D2E}
+.ba-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:46px;height:46px;border-radius:50%;border:2px solid #FFFFFF;background:rgba(9,51,29,.75);color:#FFFFFF;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.ba-arrow:hover{background:#0E4D2E}
+.ba-prev{left:14px}
+.ba-next{right:14px}
+.ba-dots{display:flex;gap:8px;justify-content:center;margin-top:16px}
+.ba-dot{width:11px;height:11px;border-radius:50%;border:2px solid #0E4D2E;background:transparent;cursor:pointer;padding:0}
+.ba-dot.is-active{background:#7FB069;border-color:#0E4D2E}
+@media (max-width:640px){.ba-cmp{aspect-ratio:4/3}.ba-arrow{width:40px;height:40px;font-size:22px}.hero-dots{right:16px;bottom:14px}}
+</style>
+<section class="section ba-section" id="before-after" aria-label="Before and after restoration work">
+  <div class="wrap">
+    <div class="ba-head">
+      <h2>Before &amp; After — Real Restoration Work</h2>
+      <p>Drag the handle on each photo to compare the damage with the recovery.</p>
+    </div>
+    <div class="ba-carousel" id="baCarousel">
+      <div class="ba-track">
+        <figure class="ba-slide">
+          <div class="ba-cmp" style="--pos:50%">
+            <img class="ba-after" src="/assets/images/story/drying-restoration-jacksonville.webp" alt="Bright, fully restored living room after water damage repair" loading="lazy">
+            <img class="ba-before" src="/assets/images/story/water-hits-jacksonville.webp" alt="Home surrounded by muddy floodwater" loading="lazy">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle"><span class="ba-grip">&#8249;&#8250;</span></div>
+          </div>
+        </figure>
+        <figure class="ba-slide">
+          <div class="ba-cmp" style="--pos:50%">
+            <img class="ba-after" src="/assets/images/story/water-extraction-jacksonville.webp" alt="Worker wet-vacuuming a clean, dry living room floor" loading="lazy">
+            <img class="ba-before" src="/assets/images/gen/flood-water-extraction-jacksonville.webp" alt="Technician extracting standing water from a flooded, mud-covered living room" loading="lazy">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle"><span class="ba-grip">&#8249;&#8250;</span></div>
+          </div>
+        </figure>
+        <figure class="ba-slide">
+          <div class="ba-cmp" style="--pos:50%">
+            <img class="ba-after" src="/assets/images/gen/a-restorer-carefully-working-on-a-photograph-wit-b3cd40b9.webp" alt="Restorer carefully cleaning a water-damaged photograph" loading="lazy">
+            <img class="ba-before" src="/assets/images/gen/intricate-pattern-of-black-mold-spores-on-a-whit-5bd7fe3b.webp" alt="Black mold growth spread across an interior wall" loading="lazy">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle"><span class="ba-grip">&#8249;&#8250;</span></div>
+          </div>
+        </figure>
+        <figure class="ba-slide">
+          <div class="ba-cmp" style="--pos:50%">
+            <img class="ba-after" src="/assets/images/gen/workers-engaged-in-carpentry-inside-a-building-u-42911b55.webp" alt="Workers rebuilding an interior with new lumber" loading="lazy">
+            <img class="ba-before" src="/assets/images/gen/exterior-of-a-damaged-house-showing-destruction-94e200e8.webp" alt="Storm-damaged house with a collapsed roof and walls" loading="lazy">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle"><span class="ba-grip">&#8249;&#8250;</span></div>
+          </div>
+        </figure>
+        <figure class="ba-slide">
+          <div class="ba-cmp" style="--pos:50%">
+            <img class="ba-after" src="/assets/images/gen/a-man-uses-commercial-washing-machines-at-an-ind-8de13d19.webp" alt="Commercial washing machines cleaning recovered fabrics" loading="lazy">
+            <img class="ba-before" src="/assets/images/gen/workers-wading-through-floodwaters-near-a-truck-c12c6610.webp" alt="Workers wading through floodwater beside a pump truck" loading="lazy">
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+            <div class="ba-handle"><span class="ba-grip">&#8249;&#8250;</span></div>
+          </div>
+        </figure>
+      </div>
+      <button class="ba-arrow ba-prev" type="button" aria-label="Previous comparison">&#8249;</button>
+      <button class="ba-arrow ba-next" type="button" aria-label="Next comparison">&#8250;</button>
+    </div>
+    <div class="ba-dots" aria-label="Choose comparison">
+      <button class="ba-dot is-active" type="button" aria-label="Comparison 1"></button>
+      <button class="ba-dot" type="button" aria-label="Comparison 2"></button>
+      <button class="ba-dot" type="button" aria-label="Comparison 3"></button>
+      <button class="ba-dot" type="button" aria-label="Comparison 4"></button>
+      <button class="ba-dot" type="button" aria-label="Comparison 5"></button>
     </div>
   </div>
 </section>
@@ -926,6 +1042,76 @@ if(toggle){
   </a>
 </div>
 <style>body{padding-bottom:64px !important;}</style>
+
+<script>
+// Hero crossfade slider
+(function(){
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.hero-dot');
+  if(!slides.length) return;
+  var cur = 0, timer = null;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(i){
+    slides[cur].classList.remove('is-active');
+    if(dots[cur]) dots[cur].classList.remove('is-active');
+    cur = (i + slides.length) % slides.length;
+    slides[cur].classList.add('is-active');
+    if(dots[cur]) dots[cur].classList.add('is-active');
+  }
+  function start(){ if(reduce || timer) return; timer = setInterval(function(){ go(cur + 1); }, 5000); }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+  dots.forEach(function(d, i){ d.addEventListener('click', function(){ stop(); go(i); start(); }); });
+  var hero = document.querySelector('.hero');
+  if(hero){ hero.addEventListener('mouseenter', stop); hero.addEventListener('mouseleave', start); }
+  document.addEventListener('visibilitychange', function(){ if(document.hidden){ stop(); } else { start(); } });
+  start();
+})();
+// Before/after carousel with draggable comparison handles
+(function(){
+  var track = document.querySelector('.ba-track');
+  if(!track) return;
+  var slides = track.children;
+  var dots = document.querySelectorAll('.ba-dot');
+  var idx = 0, timer = null;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(i){
+    idx = (i + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+    dots.forEach(function(d, j){ d.classList.toggle('is-active', j === idx); });
+  }
+  function start(){ if(reduce || timer) return; timer = setInterval(function(){ go(idx + 1); }, 6000); }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+  var prev = document.querySelector('.ba-prev'), next = document.querySelector('.ba-next');
+  if(prev) prev.addEventListener('click', function(){ stop(); go(idx - 1); start(); });
+  if(next) next.addEventListener('click', function(){ stop(); go(idx + 1); start(); });
+  dots.forEach(function(d, i){ d.addEventListener('click', function(){ stop(); go(i); start(); }); });
+  var car = document.getElementById('baCarousel');
+  if(car){ car.addEventListener('mouseenter', stop); car.addEventListener('mouseleave', start); }
+  document.querySelectorAll('.ba-cmp').forEach(function(cmp){
+    function setPos(clientX){
+      var r = cmp.getBoundingClientRect();
+      var p = (clientX - r.left) / r.width * 100;
+      p = Math.max(2, Math.min(98, p));
+      cmp.style.setProperty('--pos', p + '%');
+    }
+    cmp.addEventListener('pointerdown', function(e){
+      stop();
+      try{ cmp.setPointerCapture(e.pointerId); }catch(err){}
+      setPos(e.clientX);
+      function mv(ev){ setPos(ev.clientX); }
+      function up(){
+        cmp.removeEventListener('pointermove', mv);
+        cmp.removeEventListener('pointerup', up);
+        cmp.removeEventListener('pointercancel', up);
+      }
+      cmp.addEventListener('pointermove', mv);
+      cmp.addEventListener('pointerup', up);
+      cmp.addEventListener('pointercancel', up);
+    });
+  });
+  start();
+})();
+</script>
 
 </body>
 </html>
