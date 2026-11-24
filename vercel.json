@@ -188,11 +188,5 @@
       "destination": "/guides/insurance-claims-denied-jacksonville/",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/404.html"
-    }
   ]
 }
