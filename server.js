@@ -37,11 +37,7 @@ const explicitRedirects = {
   '/locations/water-damage-restoration-in-southside': '/service-areas/southside/',
   '/locations/water-damage-restoration-in-southside/': '/service-areas/southside/',
   '/locations/water-damage-restoration-in-southside.html': '/service-areas/southside/',
-
-  // 3. Off-topic page removed -> homepage
-  '/services/fire-damage-restoration': '/',
-  '/services/fire-damage-restoration/': '/',
-  '/services/fire-damage-restoration.html': '/',
+  // 3. Fire damage page rebuilt 24 Nov 2026 — served as a real page (see /services/fire-damage-restoration/)
 
   // Root file alias
   '/index.html': '/'
@@ -108,7 +104,7 @@ app.use(express.static(__dirname));
 
 // 404 Fallback
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, 'index.html'));
+  res.status(404).sendFile(path.join(__dirname, '404.html'));
 });
 
 app.listen(PORT, HOST, () => {

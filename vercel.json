@@ -109,21 +109,6 @@
       "permanent": true
     },
     {
-      "source": "/services/fire-damage-restoration",
-      "destination": "/services/",
-      "permanent": true
-    },
-    {
-      "source": "/services/fire-damage-restoration/",
-      "destination": "/services/",
-      "permanent": true
-    },
-    {
-      "source": "/services/fire-damage-restoration.html",
-      "destination": "/services/",
-      "permanent": true
-    },
-    {
       "source": "/about.html",
       "destination": "/about/",
       "permanent": true
