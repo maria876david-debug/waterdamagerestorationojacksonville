@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="120" viewBox="0 0 660 120">
+  <g transform="translate(3,4)"><g>
+  <path d="M50 3 L93 17 V57 C93 84 74.5 100.5 50 109 C25.5 100.5 7 84 7 57 V17 Z" fill="#FFFFFF"/>
+  <path d="M50 25 C50 25 37.5 41.5 37.5 52 A12.5 12.5 0 0 0 62.5 52 C62.5 41.5 50 25 50 25 Z" fill="#0E4D2E"/>
+  <path d="M16 76 Q33 66.5 50 76 T84 76" fill="none" stroke="#0E4D2E" stroke-width="6.5" stroke-linecap="round"/>
+</g></g>
+  <text x="140" y="60" font-family="Oswald, Archivo, Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">WATER DAMAGE RESTORATION</text>
+  <text x="142" y="99" font-family="Oswald, Archivo, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="13" fill="#A9CC8E">JACKSONVILLE</text>
+</svg>

@@ -1,31 +1,31 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #fafafa;
-  --foreground: #09090b;
+  --background: #ffffff;
+  --foreground: #182420;
   --card: #ffffff;
-  --card-foreground: #09090b;
+  --card-foreground: #182420;
   --popover: #ffffff;
-  --popover-foreground: #09090b;
+  --popover-foreground: #182420;
 
-  /* Safety Orange for High Urgency */
-  --primary: #ea580c;
+  /* V3 Green Model primary (applied 24 Nov 2026) */
+  --primary: #0E4D2E;
   --primary-foreground: #ffffff;
 
-  /* Dark Zinc for contrast sections */
-  --secondary: #18181b;
-  --secondary-foreground: #fafafa;
+  /* Deep green for contrast sections */
+  --secondary: #09331D;
+  --secondary-foreground: #EAF3EC;
 
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --accent: #fff7ed;
-  --accent-foreground: #9a3412;
+  --muted: #F2F7F3;
+  --muted-foreground: #5A6B60;
+  --accent: #DCEBDF;
+  --accent-foreground: #09331D;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #e4e4e7;
-  --input: #e4e4e7;
-  --ring: #ea580c;
-  --radius: 0px; /* Brutalist/sharp edges */
+  --border: #D8E4DA;
+  --input: #D8E4DA;
+  --ring: #0E4D2E;
+  --radius: 6px; /* V3 model rounded corners */
 }
 
 @layer base {
